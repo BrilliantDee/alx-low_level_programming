@@ -1,20 +1,20 @@
-#include "main.h"
+include "main.h"
 
 /**
-* print_numbers - Prints numbers 0-9
-*/
+ * more_numbers - print more numbers
+ */
 
 void more_numbers(void)
 {
-	int line, digits;
+	int i, j;
 
-	for (line = 0; line <= 9; line++)
+	for (i = 1; i <= 10; i++)
 	{
-		for (digits = 0; digits <= 14; digits++)
+		for (j = 0; j <= 14; j++)
 		{
-			if (digits > 9)
-				_putchar((digits / 10) + '0');
-			_putchar((digits % 10) + '0');
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
 		}
 		_putchar('\n');
 	}
