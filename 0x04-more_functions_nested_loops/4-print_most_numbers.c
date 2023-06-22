@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
-* print_numbers - Prints numbers 0-9
-*/
+ * print_most_numbers - prints numbers from 0 to 9
+ * Return: void
+ */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
-	int n;
+	int i;
 
-	for (n = 0; n <= 9; n++)
+	for (i = 0; i <= 9; i++)
 	{
-		if (n == 2 || n == 4)
-		{
-			continue; /*Skips iteration of 2 and 4*/
-		}
-		else
-		{
-			_putchar(n + '0');
-		}
+	if (i == 2 || i == 4)
+	{
+	continue;
+	}
+	else
+	{
+	_putchar(i + '0');
+	}
 	}
 	_putchar('\n');
 }
