@@ -1,23 +1,26 @@
 #include "main.h"
 
 /**
- * print_number - prints an nteger
- *@n: is the number
- * Return: void
+ * print_number - prints an integer
+ * @n: integer to be printed
  */
-
 void print_number(int n)
 {
-	unsigned k = n;
+	unsigned int a;
 
 	if (n < 0)
 	{
-	n *= -1;
-	k = n;
-	_putchar('_');
+		a = -n;
+		_putchar('-');
+	} else
+	{
+		a = n;
 	}
-	k /= 10;
-	if (k != 0)
-	print_number(k);
-	_putchar((unsigned int) n % 10 + '0');
+
+	if (a / 10)
+	{
+		print_number(a / 10);
+	}
+
+	_putchar((a % 10) + '0');
 }
