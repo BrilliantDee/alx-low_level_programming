@@ -1,5 +1,3 @@
-Recursion
-
 General
 
     What is recursion
